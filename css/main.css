@@ -16,6 +16,27 @@ body {
 .container {
   max-width: 1487px;
   padding: 20px 200px;
+  margin: 0 auto;
+}
+
+button {
+  color: rgb(255, 255, 255);
+  font-family: Muli;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0%;
+  text-align: left;
+  border-radius: 55px;
+  padding: 10px 30px;
+  background: rgb(69, 143, 246);
+  border: none;
+  cursor: pointer;
+  transition: all 0.7s ease-in-out;
+}
+
+button:hover {
+  color: rgb(69, 143, 246);
+  background: #fff;
 }
 
 @media screen and (max-width: 768px) {
@@ -61,6 +82,157 @@ nav {
   transform: scale(1.1);
 }
 
+/* ! Main  */
+
+/* ? herro */
+.herro {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 100px;
+}
+
+.herro-info {
+  width: 50%;
+}
+.herro-info h1 {
+  color: rgb(0, 0, 0);
+  font-family: Muli;
+  font-size: 43px;
+  font-weight: 700;
+  line-height: 56px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.herro-info p {
+  color: rgb(125, 121, 135);
+  font-family: Muli;
+  font-size: 21px;
+  font-weight: 300;
+  line-height: 32px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin: 20px 0 38px 0;
+}
+
+.herro-image {
+  max-width: 693px;
+}
+
+.herro-image img {
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .herro {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .herro-info h1 {
+    color: rgb(0, 0, 0);
+    font-family: Muli;
+    font-size: 33px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+  .herro-info p {
+    margin: 10px 0 28px 0;
+    text-align: center;
+  }
+  .herro-info {
+    width: 100%;
+  }
+
+  .herro-btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* ? herro */
+
+/* ? Our services */
+
+.ourservices {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.services-cards {
+  display: grid;
+  gap: 34px;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 20px 0;
+}
+.ourservices h2 {
+  color: rgb(0, 0, 0);
+  font-family: Muli;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 56px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.ourservices p {
+  color: rgb(125, 121, 135);
+  font-family: Muli;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 30px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.card {
+  border-radius: 20px;
+  padding: 60px 39px;
+  max-width: 350px;
+  text-align: start;
+  /* drop shadow */
+  box-shadow: 10px 40px 50px 0px rgba(229, 233, 246, 0.4);
+  background: rgb(255, 255, 255);
+}
+
+.card h3 {
+  color: rgb(0, 0, 0);
+  font-family: Muli;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 56px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.card p {
+  color: rgb(125, 121, 135);
+  font-family: Muli;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 28px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+@media screen and (max-width: 768px) {
+  .ourservices button {
+    width: 100%;
+    text-align: center;
+  }
+  .services-cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+/* ? Our services */
+
+/* ! Main  */
+
 @media screen and (max-width: 768px) {
   nav {
     position: relative;
@@ -97,6 +269,75 @@ nav {
   }
 }
 
+/*! leading  */
+
+.leading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 100px auto;
+  gap: 20px;
+}
+
+.leading-image {
+  width: 45%;
+}
+
+.leading-image img {
+  width: 100%;
+}
+
+.leading-info {
+  width: 45%;
+}
+
+.leading-info h3 {
+  text-align: center;
+}
+.leading-info p {
+  text-align: center;
+}
+
+.leading-info button {
+  width: 100%;
+  text-align: center;
+}
+
+.leading-info h3 {
+  color: rgb(0, 0, 0);
+  font-family: Muli;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 46px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.leading-info p {
+  color: rgb(125, 121, 135);
+  font-family: Muli;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 30px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin: 20px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .leading {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .leading-image {
+    width: 100%;
+  }
+  .leading-info {
+    width: 100%;
+  }
+}
 /* ! footer */
 
 footer {
