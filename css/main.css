@@ -500,7 +500,6 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;
 }
 .check h3 {
   color: rgb(0, 0, 0);
@@ -544,6 +543,8 @@ footer {
 
   .check-cards {
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
   }
 }
 .footer {
